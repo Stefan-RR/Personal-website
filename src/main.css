@@ -15,9 +15,9 @@
     padding-left: 12%;
     padding-right: 12%;
 }
-.display {
+.heroContainer {
     bottom: 0;
-    height: 90%;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     padding-left: 12%;
