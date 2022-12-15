@@ -23,6 +23,30 @@
     padding-left: 12%;
     padding-right: 12%;
 }
+.projectsContainer {
+    bottom: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+.skillsContainer {
+    bottom: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+.contactContainer {
+    bottom: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 12%;
+    padding-right: 12%;
+}
 .front-page {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
