@@ -6,7 +6,7 @@
     right:0;
     height:100%;
     width:100%;
-    background-color: #09091be6;
+    font-family: 'Roboto', sans-serif;
 }
 .container {
     display: flex;
@@ -14,6 +14,7 @@
     align-items: center;
     padding-left: 12%;
     padding-right: 12%;
+    background-color: #09091be6;
 }
 .heroContainer {
     bottom: 0;
@@ -22,6 +23,7 @@
     justify-content: space-between;
     padding-left: 12%;
     padding-right: 12%;
+    background-color: #09091be6;
 }
 .projectsContainer {
     bottom: 0;
@@ -30,6 +32,7 @@
     justify-content: space-between;
     padding-left: 12%;
     padding-right: 12%;
+    background-color: #09091be6;
 }
 .skillsContainer {
     bottom: 0;
@@ -38,6 +41,7 @@
     justify-content: space-between;
     padding-left: 12%;
     padding-right: 12%;
+    background-color: #09091be6;
 }
 .contactContainer {
     bottom: 0;
@@ -46,9 +50,9 @@
     justify-content: space-between;
     padding-left: 12%;
     padding-right: 12%;
+    background-color: #09091be6;
 }
 .front-page {
-    font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     font-size: 35px;
     color: white;
@@ -69,7 +73,6 @@ ul {
 }
 .list-item {
     display: inline;
-    font-family:'Quicksand', sans-serif;
     font-weight: bold;
     font-size: 22px;
     color: lightgrey;
@@ -81,7 +84,6 @@ ul {
     transition: 0.6s;
 }
 .description {
-    font-family:'Quicksand', sans-serif;
     font-size: 25px;
     color: lightgrey;
     width: 40%;
@@ -90,18 +92,16 @@ ul {
     
 }
 .but {
-    font-family:'Quicksand', sans-serif;
     font-size: 25px;
     font-weight: bold;
     background-color:rgb(148, 247, 214);
     color: white;
     border-style: none;
-    border-radius: 30px;
-    padding: 2.5%;
+    border-radius: 5px;
+    padding: 1.5%;
     text-decoration: none;
 }
 .but-link {
-    font-family:'Quicksand', sans-serif;
     font-size: 25px;
     font-weight: bold;
     background-color:rgb(148, 247, 214);
