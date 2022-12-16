@@ -12,8 +12,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 12%;
-    padding-right: 12%;
+    padding-left: 8%;
+    padding-right: 8%;
     background-color: #09091be6;
 }
 .heroContainer {
@@ -21,35 +21,8 @@
     height: 100vh;
     display: flex;
     justify-content: space-between;
-    padding-left: 12%;
-    padding-right: 12%;
-    background-color: #09091be6;
-}
-.projectsContainer {
-    bottom: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 12%;
-    padding-right: 12%;
-    background-color: #09091be6;
-}
-.skillsContainer {
-    bottom: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 12%;
-    padding-right: 12%;
-    background-color: #09091be6;
-}
-.contactContainer {
-    bottom: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 12%;
-    padding-right: 12%;
+    padding-left: 8%;
+    padding-right: 8%;
     background-color: #09091be6;
 }
 .front-page {
@@ -74,14 +47,33 @@ ul {
 .list-item {
     display: inline;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
     color: lightgrey;
-    padding-left: 30px;
+    padding-left: 25px;
 }
-
+.list-item-logo {
+    display: inline;
+    font-weight: bold;
+    color: lightgrey;
+    padding-left: 25px;
+} 
+.list-item-logo-linkedin {
+    display: inline;
+    font-weight: bold;
+    color: lightgrey;
+    padding-left: 4px;
+}
 .top-link:hover{
     color:rgb(148, 247, 214);
     transition: 0.6s;
+}
+.github {
+    height: 20px;
+    width: 20px;
+}
+.linkedin{
+    height: 20px;
+    width: 20px;  
 }
 .description {
     font-size: 25px;
@@ -89,7 +81,6 @@ ul {
     width: 40%;
     align-self: center;
     display:inline;
-    
 }
 .but {
     font-size: 25px;
@@ -123,4 +114,31 @@ ul {
 h2{
     font-size: 55px;
   
+}
+.projectsContainer {
+    bottom: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 12%;
+    padding-right: 12%;
+    background-color: #09091be6;
+}
+.skillsContainer {
+    bottom: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 12%;
+    padding-right: 12%;
+    background-color: #09091be6;
+}
+.contactContainer {
+    bottom: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 12%;
+    padding-right: 12%;
+    background-color: #09091be6;
 }
