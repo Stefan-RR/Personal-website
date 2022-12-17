@@ -8,7 +8,8 @@
     width:100%;
     font-family: 'Roboto', sans-serif;
 }
-.container {
+
+.navDiv {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,9 +72,21 @@ ul {
     height: 20px;
     width: 20px;
 }
-.linkedin{
+.linkedin {
     height: 20px;
     width: 20px;  
+}
+.lift {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  color:rgb(148, 247, 214);
+
+}
+.lift:hover {
+    top: -3px;
+    filter: drop-shadow(0 0 1px rgb(148, 247, 214));
+
 }
 .description {
     font-size: 25px;
@@ -101,7 +114,6 @@ ul {
     border-radius: 30px;
     text-decoration: none;
 }
-
 .but-link:hover {
     color: rgb(75, 74, 74);
     background-color:rgb(162, 243, 216);
@@ -123,6 +135,9 @@ h2{
     padding-left: 12%;
     padding-right: 12%;
     background-color: #09091be6;
+}
+.projectHolder{
+    
 }
 .skillsContainer {
     bottom: 0;
