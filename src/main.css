@@ -181,7 +181,7 @@ h2{
 }
 .contactContainer {
     bottom: 0;
-    height: 40vh;
+    height: 45vh;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -193,7 +193,7 @@ h2{
 .emailP {
     font-size: 20px;
     font-weight: bold;
-    color: white;
+    color: rgb(153, 153, 153);
 }
 .emailLink {
     font-size: 20px;
@@ -204,4 +204,25 @@ h2{
     border-radius: 5px;
     padding: 1%;
     text-decoration: none;  
+}
+.emailLink:hover {
+    color: rgb(75, 74, 74);
+    background-color:rgb(162, 243, 216);
+    transition: 0.6s;
+}
+.footerContainer {
+    bottom: 0;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-left: 12%;
+    padding-right: 12%;
+    background-color: #09091be6;
+    color: rgb(153, 153, 153);
+}
+.siteLink {
+    color:rgb(162, 243, 216);
+    text-decoration: none;
 }
