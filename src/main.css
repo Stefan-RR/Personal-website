@@ -82,12 +82,10 @@ ul {
   top: 0;
   transition: top ease 0.5s;
   color:rgb(148, 247, 214);
-
 }
 .lift:hover {
     top: -3px;
     filter: drop-shadow(0 0 1px rgb(148, 247, 214));
-
 }
 .description {
     font-size: 25px;
@@ -135,22 +133,32 @@ h2{
     font-size: 55px;
     color: lightgrey;
 }
+
 .projectsContainer {
     bottom: 0;
     height: 100vh;
     display: flex;
-    justify-content: space-between;
-    padding-left: 12%;
-    padding-right: 12%;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
     background-color: #09091be6;
 }
-.projectHolder{
-    
+.projectHolder {
+    display: flex;
+    flex-direction: row;
+}
+.proj {
+    height: 300px;
+    width: 400px;
+    background-color: aliceblue;
 }
 .skillsContainer {
     bottom: 0;
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
     justify-content: space-between;
     padding-left: 12%;
     padding-right: 12%;
@@ -160,6 +168,9 @@ h2{
     bottom: 0;
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
     justify-content: space-between;
     padding-left: 12%;
     padding-right: 12%;
