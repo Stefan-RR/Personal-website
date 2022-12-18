@@ -181,13 +181,27 @@ h2{
 }
 .contactContainer {
     bottom: 0;
-    height: 100vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    justify-content: space-between;
     padding-left: 12%;
     padding-right: 12%;
     background-color: #09091be6;
+}
+.emailP {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.emailLink {
+    font-size: 20px;
+    font-weight: bold;
+    background-color:rgb(148, 247, 214);
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    padding: 1%;
+    text-decoration: none;  
 }
