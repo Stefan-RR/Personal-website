@@ -119,6 +119,8 @@ ul {
     border-style: none;
     border-radius: 30px;
     text-decoration: none;
+    border-radius: 5px;
+    padding: 1.5%;
 }
 .but-link:hover {
     color: rgb(75, 74, 74);
@@ -133,7 +135,6 @@ h2{
     font-size: 55px;
     color: lightgrey;
 }
-
 .projectsContainer {
     bottom: 0;
     height: 100vh;
@@ -148,9 +149,23 @@ h2{
     flex-direction: row;
 }
 .proj {
+    display: flex;
+    flex-direction: column;
+}
+.projectImage {
     height: 300px;
     width: 400px;
     background-color: aliceblue;
+}
+.projectButton {
+    font-size: 18px;
+    font-weight: bold;
+    background-color:rgb(148, 247, 214);
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    padding: 1.5%;
+    text-decoration: none;
 }
 .skillsContainer {
     bottom: 0;
