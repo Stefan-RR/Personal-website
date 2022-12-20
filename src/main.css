@@ -19,13 +19,9 @@
 }
 .navButton {
     font-family: 'Roboto', sans-serif;
+    width: 0;
     font-weight: bold;
     visibility: hidden;
-    min-height: 3px;
-    background-color: white;
-    color: rgb(53, 53, 53);
-    border-style: none;
-    border-radius: 3px;
 }
 .dropContent {
     visibility: hidden;
@@ -35,7 +31,7 @@
   visibility: visible;
 }
 .navHidden {
-    background-color: #09091be6;
+  background-color: #09091be6;
   font-size: 30px;
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -65,10 +61,8 @@
     transition: 0.6s;
     filter: drop-shadow(0 0 .75px rgb(148, 247, 214));
 }
-ul {
+.list {
     list-style: none;
-    align-items: left;
-    
 }
 .top-link {
     color: lightgrey;
@@ -258,10 +252,18 @@ h2{
     text-decoration: none;
 }
 @media (max-width: 768px) {
+    .top-link {
+        visibility: hidden;
+    }
     .navButton {
         visibility: visible;
         height: 25px;
         width: 50px;
         right: 0;
+        min-height: 3px;
+        background-color: white;
+        color: rgb(53, 53, 53);
+        border-style: none;
+        border-radius: 3px;
     }
 }
