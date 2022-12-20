@@ -17,6 +17,34 @@
     padding-right: 8%;
     background-color: #09091be6;
 }
+.navButton {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    visibility: hidden;
+    min-height: 3px;
+    background-color: white;
+    color: rgb(53, 53, 53);
+    border-style: none;
+    border-radius: 3px;
+}
+.dropContent {
+    visibility: hidden;
+    position: absolute;
+}
+.show {
+  visibility: visible;
+}
+.navHidden {
+    background-color: #09091be6;
+  font-size: 30px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  display: block;
+  padding: 15px;
+  margin-left: -100%;
+  opacity: 90%;
+  font-family: 'Roboto', sans-serif;
+}
 .heroContainer {
     bottom: 0;
     height: 100vh;
@@ -95,6 +123,9 @@ ul {
     display:inline;
     margin-left: auto;
     margin-right: auto;
+}
+.name {
+    color:rgb(148, 247, 214);
 }
 .button-holder {
     align-items: center;
@@ -225,4 +256,12 @@ h2{
 .siteLink {
     color:rgb(162, 243, 216);
     text-decoration: none;
+}
+@media (max-width: 768px) {
+    .navButton {
+        visibility: visible;
+        height: 25px;
+        width: 50px;
+        right: 0;
+    }
 }
