@@ -16,10 +16,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 50px;
+    padding-right: 50px;
     background-color: #09091be6;
-    max-width: 100%;
+    max-width: auto;
 }
 .navButton {
     font-family: 'Roboto', sans-serif;
@@ -30,9 +30,18 @@ body {
 .dropContent {
     visibility: hidden;
     position: absolute;
+    right: 0;
+    transform: translateX(0vh);
+    transition: 0.25s;
 }
 .show {
+  position: absolute;
   visibility: visible;
+  right: 0;
+  transform: translateX(-8vh);
+  transition: 0.25s;
+  height: 100vh;
+  width: 75vw;
 }
 .navHidden {
   background-color: #09091be6;
@@ -41,9 +50,16 @@ body {
   color: rgb(255, 255, 255);
   display: block;
   padding: 15px;
-  margin-left: -100%;
+  right: 0;
   opacity: 90%;
   font-family: 'Roboto', sans-serif;
+}
+.navHidden:hover {
+    background-color: #21213ae6;
+
+}
+.list {
+    margin-left: auto;
 }
 .heroContainer {
     bottom: 0;
