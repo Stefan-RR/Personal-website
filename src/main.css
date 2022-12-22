@@ -1,3 +1,6 @@
+body {
+    margin: 0;
+}
 .Main {
     display: grid;
     position:absolute;
@@ -16,6 +19,7 @@
     padding-left: 8%;
     padding-right: 8%;
     background-color: #09091be6;
+    max-width: 100%;
 }
 .navButton {
     font-family: 'Roboto', sans-serif;
@@ -162,7 +166,7 @@ h2{
 }
 .projectsContainer {
     bottom: 0;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -194,7 +198,7 @@ h2{
 }
 .skillsContainer {
     bottom: 0;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -252,8 +256,17 @@ h2{
     text-decoration: none;
 }
 @media (max-width: 768px) {
+    .navDiv {
+        width: auto;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
     .top-link {
         visibility: hidden;
+    }
+    .list-item {
+        padding: 0;
+        max-width: 0;
     }
     .navButton {
         visibility: visible;
@@ -267,5 +280,9 @@ h2{
     }
     h2 {
         font-size: 7vw;
+    }
+    .projectHolder {
+        display: flex;
+        flex-direction: column;
     }
 }
