@@ -259,11 +259,13 @@ h2{
         visibility: visible;
         height: 25px;
         width: 50px;
-        right: 0;
         min-height: 3px;
         background-color: white;
         color: rgb(53, 53, 53);
         border-style: none;
         border-radius: 3px;
+    }
+    h2 {
+        font-size: 7vw;
     }
 }
