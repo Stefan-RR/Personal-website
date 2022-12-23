@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #2c2c63;
 }
 .Main {
     display: grid;
@@ -10,7 +11,7 @@ body {
     right:0;
     height:100%;
     width:100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .navDiv {
     position: fixed;
@@ -23,8 +24,8 @@ body {
     right: 0;
     left: 0;
     z-index: 5;
-    background-color: #09091be6;
-
+    opacity: 100%;
+    background-color: #2c2c63;
 }
 .navButton {
     font-family: 'Roboto', sans-serif;
@@ -46,7 +47,7 @@ body {
   color: rgb(255, 255, 255);
   display: block;
   padding: 15px;
-  opacity: 90%;
+  opacity: 100%;
   font-family: 'Roboto', sans-serif;
 }
 .navHidden:hover {
@@ -60,9 +61,9 @@ body {
     height: 100vh;
     display: flex;
     justify-content: space-between;
-    padding-left: 8%;
-    padding-right: 8%;
-    background-color: #09091be6;
+    align-items: center;
+    padding-left: auto;
+    padding-right: auto;
 }
 .front-page {
     font-weight: bold;
@@ -181,7 +182,6 @@ h2{
     flex-direction: column;
     text-align: center;
     align-items: center;
-    background-color: #09091be6;
 }
 .projectHolder {
     display: flex;
@@ -216,7 +216,6 @@ h2{
     justify-content: space-between;
     padding-left: 12%;
     padding-right: 12%;
-    background-color: #09091be6;
 }
 .contactContainer {
     bottom: 0;
@@ -227,7 +226,6 @@ h2{
     align-items: center;
     padding-left: 12%;
     padding-right: 12%;
-    background-color: #09091be6;
 }
 .emailP {
     font-size: 20px;
@@ -258,7 +256,6 @@ h2{
     align-items: center;
     padding-left: 12%;
     padding-right: 12%;
-    background-color: #09091be6;
     color: rgb(153, 153, 153);
 }
 .siteLink {
@@ -293,29 +290,40 @@ h2{
     .dropContent {
         visibility: hidden;
         position: absolute;
-        top: 99px;
+        top: 0px;
         right: 0;
         transform: translateX(75vw);
         transition: 0.3s;
         height: 100vh;
         width: 80vw;
-        background-color: #09091be6;
         z-index: 5;
         text-align: center;
-
-        }
+        opacity: 100%;
+        background-color: #2c2c63;
+        padding-top: 99px;
+    }
     .show {
         position: absolute;
         visibility: visible;
-        top: 99px;
+        top: 0px;
         right: 0;
         transform: translateX(-.3vw);
         transition: 0.3s;
         height: 100vh;
         width: 80vw;
-        background-color: #09091be6;
         z-index: 5;
         text-align: center;
+        opacity: 100%;
+        background-color: #2c2c63;
+        box-shadow: -8px 0px 10px 1px;
+        padding-top: 99px;
+    }
+    .description {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    .but-link {
+        font-size: 20px;
     }
     h2 {
         font-size: 7vw;
