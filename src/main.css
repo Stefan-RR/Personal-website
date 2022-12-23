@@ -13,13 +13,18 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 .navDiv {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 50px;
     padding-right: 50px;
-    background-color: #09091be6;
     max-width: auto;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    background-color: #09091be6;
+
 }
 .navButton {
     font-family: 'Roboto', sans-serif;
@@ -30,33 +35,22 @@ body {
 .dropContent {
     visibility: hidden;
     position: absolute;
-    right: 0;
-    transform: translateX(0vh);
-    transition: 0.25s;
 }
 .show {
   position: absolute;
-  visibility: visible;
-  right: 0;
-  transform: translateX(-8vh);
-  transition: 0.25s;
-  height: 100vh;
-  width: 75vw;
+  visibility: hidden;
 }
 .navHidden {
-  background-color: #09091be6;
   font-size: 30px;
   text-decoration: none;
   color: rgb(255, 255, 255);
   display: block;
   padding: 15px;
-  right: 0;
   opacity: 90%;
   font-family: 'Roboto', sans-serif;
 }
 .navHidden:hover {
-    background-color: #21213ae6;
-
+    background-color: #3e3e5ce6;
 }
 .list {
     margin-left: auto;
@@ -277,12 +271,8 @@ h2{
         padding-left: 2%;
         padding-right: 2%;
     }
-    .top-link {
-        visibility: hidden;
-    }
-    .list-item {
-        padding: 0;
-        max-width: 0;
+    .list-item, .list-item-logo, .list-item-logo-linkedin {
+        display: none;
     }
     .navButton {
         visibility: visible;
@@ -293,6 +283,39 @@ h2{
         color: rgb(53, 53, 53);
         border-style: none;
         border-radius: 3px;
+        z-index: 6;
+    }
+    .span {
+        height: 4px;
+        width: 50px;
+        background-color: black;
+    }
+    .dropContent {
+        visibility: hidden;
+        position: absolute;
+        top: 99px;
+        right: 0;
+        transform: translateX(75vw);
+        transition: 0.3s;
+        height: 100vh;
+        width: 80vw;
+        background-color: #09091be6;
+        z-index: 5;
+        text-align: center;
+
+        }
+    .show {
+        position: absolute;
+        visibility: visible;
+        top: 99px;
+        right: 0;
+        transform: translateX(-.3vw);
+        transition: 0.3s;
+        height: 100vh;
+        width: 80vw;
+        background-color: #09091be6;
+        z-index: 5;
+        text-align: center;
     }
     h2 {
         font-size: 7vw;
