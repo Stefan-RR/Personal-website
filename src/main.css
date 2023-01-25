@@ -22,7 +22,8 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-left: auto;
-    margin-right: 0;
+    margin-right: 10%;
+    padding-top: 1%;
 }
 .list {
     margin-left: auto;
@@ -38,10 +39,10 @@ body {
     -moz-transition: 1s ease;
     -o-transition: 1s ease;
     -ms-transition: 1s ease;
-    transform: translateX(100%)
+    transform: translateX(100%);
 }
 .top-animation {
-    transform: translateX(0)
+    transform: translateX(0);
 }
 .frame-bottom {
     height: 1.1px;
@@ -51,10 +52,10 @@ body {
     -moz-transition: 1s ease;
     -o-transition: 1s ease;
     -ms-transition: 1s ease;
-    transform: translateX(-100%)
+    transform: translateX(-100%);
 }
 .bottom-animation {
-    transform: translateX(0)
+    transform: translateX(0);
 }
 .frame-left {
     height: 200px;
@@ -63,10 +64,10 @@ body {
     -moz-transition: 1s ease;
     -o-transition: 1s ease;
     -ms-transition: 1s ease;
-    transform: translateY(100%)
+    transform: translateY(200%);
 }
 .left-animation {
-    transform: translateY(0);
+    transform: translateY(100%);
 }
 .frame-right {
     height: 200px;
@@ -76,10 +77,10 @@ body {
     -moz-transition: 1s ease;
     -o-transition: 1s ease;
     -ms-transition: 1s ease;
-    transform: translateY(-100%)
+    transform: translateY(-200%);
 }
 .right-animation {
-    transform: translateY(0);
+    transform: translateY(-100%);
 }
 .front-page {
     font-weight: bold;
@@ -100,9 +101,18 @@ body {
 }
 .description-span {
     width: 60%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    text-align: left;
 }
 .project-span {
     width: 20%;
+    padding-right: 5%;
+    text-align: center;
+}
+.project-list {
+    display: flex;
+    flex-direction: column;
 }
 .list {
     list-style: none;
@@ -135,12 +145,12 @@ body {
     transition: 0.6s;
 }
 .github {
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
 }
 .linkedin {
-    height: 20px;
-    width: 20px;  
+    height: 30px;
+    width: 30px;  
 }
 .lift {
   position: relative;
@@ -206,6 +216,10 @@ body {
 h2{
     font-size: 55px;
     color: lightgrey;
+    margin-top: 2%;
+}
+h3 {
+    margin-top: 2%;
 }
 .projects-container {
     bottom: 0;
