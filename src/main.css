@@ -76,6 +76,28 @@ body {
     padding-left: auto;
     padding-right: auto;
 }
+.frame {
+    background-color: white;
+}
+.frame-top {
+    height: 1.1px;
+    width: 50%;
+    margin-right: 50%;
+}
+.frame-bottom {
+    height: 1.1px;
+    width: 50%;
+    margin-left: 50%;
+}
+.frame-left {
+    height: 200px;
+    width: 1.1px;
+}
+.frame-right {
+    height: 200px;
+    width: 1.1px;
+    margin-left: 100%;
+}
 .front-page {
     font-weight: bold;
     font-size: 35px;
@@ -141,6 +163,7 @@ body {
     align-self: center;
     text-align: center;
     display:inline;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
