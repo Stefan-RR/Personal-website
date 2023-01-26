@@ -16,27 +16,30 @@ body {
     align-items: center;
     justify-content: center;
 }
+.hidden {
+    visibility: hidden;
+}
 .splash-text {
     font-family: Helvetica, sans-serif;
     font-size: 30px;
 }
 .fade-out {
-    animation: fadeOut ease 5s;
+    animation: fadeOut ease 4s;
     animation-fill-mode: forwards;
   }
 .fade-one {
-    animation: fadeOut ease 1s;
+    animation: fadeOut ease 3s;
     animation-fill-mode: forwards;
   }
 .fade-two {
-    animation: fadeOut ease 1s;
+    animation: fadeOut ease 4s;
     animation-fill-mode: forwards;
   }
 .fade-three {
-    animation: fadeOut ease 1s;
+    animation: fadeOut ease 4s;
     animation-fill-mode: forwards;
   }
-  @keyframes fadeOut {
+@keyframes fadeOut {
     0% {
       opacity: 1;
     }
@@ -44,7 +47,15 @@ body {
       opacity: 0;
     }
   }
-.Main {
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+.main {
     display: grid;
     position:absolute;
     top: 0;
@@ -52,6 +63,8 @@ body {
     bottom: 0;
     right: 0;
     font-family: Helvetica, sans-serif;
+    animation: fadeIn ease 4s;
+    animation-fill-mode: forwards;
 }
 .nav-div {
     display: flex;
@@ -151,6 +164,7 @@ body {
 .project-list {
     display: flex;
     flex-direction: column;
+    border-left: 1.1px solid white;
 }
 .list {
     list-style: none;
