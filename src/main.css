@@ -5,6 +5,45 @@ body {
     margin: 0;
     background-color: #20202c;
 }
+#splash-screen {
+    background-color: #20202c;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    z-index: 99;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.splash-text {
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+}
+.fade-out {
+    animation: fadeOut ease 5s;
+    animation-fill-mode: forwards;
+  }
+.fade-one {
+    animation: fadeOut ease 1s;
+    animation-fill-mode: forwards;
+  }
+.fade-two {
+    animation: fadeOut ease 1s;
+    animation-fill-mode: forwards;
+  }
+.fade-three {
+    animation: fadeOut ease 1s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 .Main {
     display: grid;
     position:absolute;
@@ -12,17 +51,14 @@ body {
     left: 0;
     bottom: 0;
     right: 0;
-    font-family: "Roboto", sans-serif;
-}
-.no-scroll {
-    overflow-y: hidden;
+    font-family: Helvetica, sans-serif;
 }
 .nav-div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-left: auto;
-    margin-right: 10%;
+    margin-right: 2.5%;
     padding-top: 1%;
 }
 .list {
@@ -64,7 +100,7 @@ body {
     -moz-transition: 1s ease;
     -o-transition: 1s ease;
     -ms-transition: 1s ease;
-    transform: translateY(200%);
+    transform: translateY(300%);
 }
 .left-animation {
     transform: translateY(100%);
@@ -77,7 +113,7 @@ body {
     -moz-transition: 1s ease;
     -o-transition: 1s ease;
     -ms-transition: 1s ease;
-    transform: translateY(-200%);
+    transform: translateY(-300%);
 }
 .right-animation {
     transform: translateY(-100%);
@@ -101,13 +137,15 @@ body {
 }
 .description-span {
     width: 60%;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
     padding-left: 5%;
+    padding-top: 5%;
     text-align: left;
 }
 .project-span {
     width: 20%;
     padding-right: 5%;
+    padding-top: 5%;
     text-align: center;
 }
 .project-list {
@@ -214,12 +252,13 @@ body {
     text-decoration: none; 
 }
 h2{
-    font-size: 55px;
+    font-size: 75px;
     color: lightgrey;
-    margin-top: 2%;
+    font-weight: lighter;
 }
 h3 {
-    margin-top: 2%;
+    margin-top: 50%;
+    font-weight: lighter;
 }
 .projects-container {
     bottom: 0;
@@ -229,173 +268,4 @@ h3 {
     text-align: center;
     align-items: center;
 }
-.project-holder {
-    display: flex;
-    flex-direction: row;
-}
-.proj {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-}
-.img-holder {
-    height: 300px;
-    overflow: hidden;
-}
-.project-image {
-    height: 300px;
-    width: 400px;
-    background-color: aliceblue;
-    transition: transform .5s ease;
-}
-.project-image:hover {
-transform: scale(1.03)
-}
-.project-button {
-    font-size: 18px;
-    font-weight: bold;
-    background-color: #20202c;
-    color: rgb(162, 243, 216);
-    border-color: rgb(162, 243, 216);
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 5px;
-    padding: 1.5%;
-    text-decoration: none;
-}
-.project-button:hover {
-    color: rgb(75, 74, 74);
-    background-color:rgb(162, 243, 216);
-    transition: 0.6s;
-}
-.skills-container {
-    bottom: 0;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 12%;
-    padding-right: 12%;
-}
-.contact-container {
-    bottom: 0;
-    height: 45vh;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    padding-left: 12%;
-    padding-right: 12%;
-}
-.email-p {
-    font-size: 20px;
-    font-weight: bold;
-    color: rgb(153, 153, 153);
-}
-.email-link {
-    font-size: 20px;
-    font-weight: bold;
-    background-color:rgb(148, 247, 214);
-    color: white;
-    border-style: none;
-    border-radius: 5px;
-    padding: 1%;
-    text-decoration: none;  
-}
-.email-link:hover {
-    color: rgb(75, 74, 74);
-    background-color:rgb(162, 243, 216);
-    transition: 0.6s;
-}
-.footer-container {
-    bottom: 0;
-    height: 10vh;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    padding-left: 12%;
-    padding-right: 12%;
-    color: rgb(153, 153, 153);
-}
-.site-link {
-    color:rgb(162, 243, 216);
-    text-decoration: none;
-}
-@media (max-width: 768px) {
-    .nav-div {
-        width: auto;
-        padding-left: 2%;
-        padding-right: 2%;
-    }
-    .list-item, .list-item-logo, .list-item-logo-linkedin {
-        display: none;
-    }
-    .button-box {
-        visibility: visible;
-        height: auto;
-        width: auto;
-        background-color: #20202c;
-        z-index: 6;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        vertical-align: middle;
-    }
-    .span {
-        height: 4px;
-        width: 50px;
-        background-color: black;
-    }
-    .drop-content {
-        visibility: hidden;
-        position: absolute;
-        top: 0px;
-        right: 0;
-        transform: translateX(75vw);
-        transition: 0.3s;
-        height: 100vh;
-        width: 80vw;
-        z-index: 5;
-        text-align: center;
-        opacity: 100%;
-        background-color: #20202c;
-        padding-top: 99px;
-    }
-    .show {
-        position: absolute;
-        visibility: visible;
-        top: 0px;
-        right: 0;
-        transform: translateX(-.3vw);
-        transition: 0.3s;
-        height: 100vh;
-        width: 80vw;
-        z-index: 5;
-        text-align: center;
-        opacity: 100%;
-        background-color: #20202c;
-        box-shadow: -8px 0px 10px 1px;
-        padding-top: 99px;
-    }
-    .description {
-        margin-right: 10%;
-        margin-left: 10%;
-    }
-    .but-link {
-        font-size: 20px;
-    }
-    h2 {
-        font-size: 7vw;
-    }
-    .project-holder {
-        display: flex;
-        flex-direction: column;
-    }
-    .project-image {
-        width: 75vw;
-        aspect-ratio: 3/4;
-    }
-}
+
