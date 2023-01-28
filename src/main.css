@@ -17,26 +17,26 @@ body {
     visibility: hidden;
 }
 .splash-text {
-    font-family: 'PPNeueMontreal-Thin.woff'; 
+    font-family: 'PPNeueMontreal-SemiBold.woff'; 
     font-size: 30px;
 }
 .fade-out {
     animation: fadeOut ease 4s;
     animation-fill-mode: forwards;
-  }
+}
 .fade-one {
     animation: fadeOut ease 3s;
     animation-fill-mode: forwards;
-  }
+}
 .fade-two {
     animation: fadeOut ease 4s;
     animation-fill-mode: forwards;
-  }
+}
 .fade-three {
     animation: fadeOut ease 4s;
     animation-fill-mode: forwards;
-    font-weight: bold ;
-  }
+    font-family: 'PPNeueMontreal-Thin.woff'; 
+}
 @keyframes fadeOut {
     0% {
       opacity: 1;
@@ -44,7 +44,7 @@ body {
     100% {
       opacity: 0;
     }
-  }
+}
   @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -52,12 +52,15 @@ body {
     100% {
       opacity: 1;
     }
-  }
+}
   @font-face {
     font-family: 'PPNeueMontreal-Thin.woff'; 
     src: url('PPNeueMontreal-Thin.woff') format('woff')
 }
-
+@font-face {
+    font-family: 'PPNeueMontreal-SemiBold.woff'; 
+    src: url('PPNeueMontreal-SemiBold.woff') format('woff')
+}
 .main {
     display: grid;
     position:absolute;
@@ -147,6 +150,15 @@ body {
     padding-top: 5%;
     text-align: left;
 }
+.contact-span {
+
+}
+.hidden {
+    display: none;
+}
+.show {
+    display: block;
+}
 .project-span {
     width: 25%;
     padding-right: 5%;
@@ -156,7 +168,7 @@ body {
 .project-list {
     display: flex;
     flex-direction: column;
-    font-size: 18px;
+    font-size: 20px;
     list-style: none;
     padding-left: 0;
 }
@@ -172,14 +184,16 @@ body {
     color: lightgrey;
 }
 .git-link {
-    background-color: white;
-    color: #20202c;
+    background-color: #20202c;
+    color: #ffffff;
     border-radius: 3px;
     padding: 1px;
-    font-size: 16px;
+    font-size: 12px;
+    font-family: 'PPNeueMontreal-SemiBold.woff'
 }
 .git-link:hover {
     background-color: rgb(196, 193, 193);
+    color:  #20202c;
     cursor: pointer;
 }
 .list {
@@ -189,20 +203,13 @@ body {
     color: lightgrey;
     text-decoration: none;
 }
-.list-item {
-    display: inline;
-    font-weight: bold;
-    font-size: 20px;
-    color: lightgrey;
-    padding-left: 25px;
-}
 .list-item-logo {
     display: inline;
     font-weight: bold;
     color: lightgrey;
-    padding-left: 25px;
+    padding-left: 10px;
 } 
-.list-item-logo-linkedin {
+.list-item-logo-gmail {
     display: inline;
     font-weight: bold;
     color: lightgrey;
@@ -212,7 +219,7 @@ body {
     height: 30px;
     width: 30px;
 }
-.linkedin {
+.gmail {
     height: 30px;
     width: 30px;  
 }
@@ -238,13 +245,15 @@ body {
     margin-right: auto;
 }
 h2{
+    font-family: 'PPNeueMontreal-SemiBold.woff';
     font-size: 90px;
     color: rgb(255, 255, 255);
     margin-bottom: 5%;
 }
 h3 {
+    font-family: 'PPNeueMontreal-SemiBold.woff';
     color: white;
-    margin-top: 50%;
+    margin-top: 40%;
 }
 @media (max-width: 1600px) {
     .center {
