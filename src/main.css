@@ -96,10 +96,7 @@ body {
     height: 0.1%;
     width: 50%;
     margin-right: 50%;
-    -webkit-transition: 1s ease;
-    -moz-transition: 1s ease;
-    -o-transition: 1s ease;
-    -ms-transition: 1s ease;
+    transition: 1s ease;
     transform: translateX(100%);
     top: 0;
     position: fixed;
@@ -111,10 +108,7 @@ body {
     height: 0.1%;
     width: 50%;
     margin-left: 50%;
-    -webkit-transition: 1s ease;
-    -moz-transition: 1s ease;
-    -o-transition: 1s ease;
-    -ms-transition: 1s ease;
+    transition: 1s ease;
     transform: translateX(-100%);
     bottom: 0;
     position: fixed;
@@ -125,10 +119,7 @@ body {
 .frame-left {
     height: 25%;
     width: 1.1px;
-    -webkit-transition: 1s ease;
-    -moz-transition: 1s ease;
-    -o-transition: 1s ease;
-    -ms-transition: 1s ease;
+    transition: 1s ease;
     transform: translateY(300%);
 }
 .left-animation {
@@ -138,10 +129,7 @@ body {
     height: 25%;
     width: 1.1px;
     margin-left: 100%;
-    -webkit-transition: 1s ease;
-    -moz-transition: 1s ease;
-    -o-transition: 1s ease;
-    -ms-transition: 1s ease;
+    transition: 1s ease;
     transform: translateY(-100%);
 }
 .right-animation {
