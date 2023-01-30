@@ -319,6 +319,7 @@ h3 {
     background-color: #c5c5c4;
     border-color: #c5c5c4;
     transition: .3s;
+    cursor: pointer;
 }
 .x {
     text-align: right;
